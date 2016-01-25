@@ -1,5 +1,5 @@
 
-# braucher/php 1.3.0
+# braucher/php 1.4.0
 
 ## Features
 - Updated Makefile for backups and building with docker-compose
