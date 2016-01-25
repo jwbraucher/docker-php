@@ -1,3 +1,10 @@
+
+# braucher/php 1.3.0
+
+## Features
+- Updated Makefile for backups and building with docker-compose
+- Added app.install.local script for local project installs
+
 # braucher/php 1.2.1
 
 ## Features
