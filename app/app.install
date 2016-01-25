@@ -2,3 +2,8 @@
 # vim: set filetype=sh :
 
 # This script installs the application
+
+# Run project-specific installation commands
+source /app.install.local
+
+END_OF_SUDO
