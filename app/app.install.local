@@ -1,3 +1,4 @@
-# Local wordpress install
-wp theme install zerif-lite
-wp theme install responsiveboat --activate
+#!/bin/bash -ex
+# vim: set filetype=sh :
+
+# This script is for local project installation instructions
