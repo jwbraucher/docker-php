@@ -20,7 +20,7 @@ rebuild $(image):
 	@\
 nocache=`echo $@ | awk '/rebuild/ {printf "--no-cache"}'` ; \
 set -x ; \
-docker-compose build \
+command=$@ docker-compose build \
   --force-rm \
   $${nocache} \
 
