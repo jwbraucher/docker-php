@@ -5,12 +5,8 @@ MAINTAINER Jeff Braucher <jeff@braucher.net>
 
 # Configure the system with puppet
 COPY ./puppet/ /puppet/
-WORKDIR /puppet
-RUN librarian-puppet install
-RUN /puppet-apply \
-  --hiera_config=./hiera.yaml \
-  --modulepath=./modules \
-  ./site.pp
+ENV PUPPET_HOME /puppet
+RUN /puppet-apply
 
 # Fix error_log parameter in php5-fpm.conf because puppet-php won't do it
 # (see php::fpm::config::error_log in php/puppet/php.yaml)
