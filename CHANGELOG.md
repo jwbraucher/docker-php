@@ -1,6 +1,10 @@
-# Unreleased
+# braucher/php 1.5.0
+
+## Features
+- Using new braucher/puppet puppet-apply entrypoint
 
 ## Bugfixes
+- Fixed rebuild in Makefile
 - Added hour to backup filename
 
 # braucher/php 1.4.0
