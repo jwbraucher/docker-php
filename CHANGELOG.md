@@ -1,3 +1,8 @@
+# braucher/php 1.6.0
+
+## Features
+- Added mysql-client package (needed by drush archive-dump)
+
 # braucher/php 1.5.0
 
 ## Features
