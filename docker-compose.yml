@@ -2,8 +2,6 @@ php:
   build: app
   ports:
     - '9000:9000'
-  links:
-    - "${app}-db"
   volumes:
     - './volumes/app:/var/www/app'
     - './volumes/export:/export'
@@ -11,15 +9,6 @@ php:
   environment:
     DB_HOST: "${app}-db"
     DOCUMENT_ROOT: '/var/www/app'
-php-db:
-  image: 'mysql:5.6'
-  volumes:
-    - '/var/lib/mysql'
-  environment:
-    MYSQL_ROOT_PASSWORD: "root_66_${app}"
-    MYSQL_DATABASE: "${app}"
-    MYSQL_USER: "${app}"
-    MYSQL_PASSWORD: "password4${app}"
 php-web:
   image: 'braucher/fcgi'
   ports:
