@@ -1,4 +1,0 @@
-#!/bin/bash -ex
-# vim: set filetype=sh :
-
-# This script backs up the application to an archive file

@@ -1,3 +1,8 @@
+# braucher/php 1.7.0 (unreleased)
+
+## Features
+- Merged in braucher/app-1.4.1
+
 # braucher/php 1.6.1
 
 ## Bugfixes
