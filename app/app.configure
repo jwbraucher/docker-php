@@ -1,9 +1,0 @@
-#!/bin/bash -ex
-# vim: set filetype=sh :
-
-# This script configures the container
-
-# set uid on run-time user and directory
-/fix-uids "${php_home}" "${php_user}"
-chown -Rh "${php_user}:${php_user}" "${php_home}"
-
